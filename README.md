@@ -6,7 +6,8 @@ visual studio code 调试c语言配置
   3. 现在，生成二进制文件，设置断点，然后f5开始调试吧
   4. 如果不需要git管理bin目录下生成的二进制文件，可以在全局gitignore或者 针对项目的gitignore中 设置忽略bin目录即可
 
-Note: 适用于macos系统下，vscode更新频繁，对调试的配置项在未来可能会不同且本仓库可能不及时更新，实时的最新版的配置tutorial在这个url
-https://code.visualstudio.com/docs/cpp/cpp-debug
+Note: 适用于macos系统下，vscode更新频繁，对调试的配置项在未来可能会不同且本仓库可能不及时更新，如果失效，请浏览改url
+https://code.visualstudio.com/docs/cpp/cpp-debug，获取最新的，根据url中的步骤，一步一步走下来就可以得到一个简单的
+调试配置文件
 
   
