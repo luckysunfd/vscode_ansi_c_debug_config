@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "clang build active file",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-std=c99",
+                "-g",
+                // "${file}",  //单个文件用这个
+                "${workspaceFolder}/*.c",  // build multiple ansi-c files by using an argument like "${workspaceFolder}/*.c"
+                "-o",
+                // "${fileDirname}/${fileBasenameNoExtension}" // 保存编译后的文件到 当前打开的项目文件夹下，并命名为当前激活的主文件去掉后缀的名字
+                "${workspaceFolder}/bin/main.out"   // 硬编码 编译后的可执行文件名字以及位置,bin文件夹要提前自己创建，不会在编译期间创建这个文件夹
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
