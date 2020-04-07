@@ -2,16 +2,17 @@
     "configurations": [
         {
             "name": "Mac",
+            // 自定义的包含文件搜索路径，加入多个，在下面json数组内加入即可
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**"  // ${workspaceFolder} - the path of the folder opened in VS Code
             ],
             "defines": [],
             "macFrameworkPath": [
                 "/System/Library/Frameworks",
                 "/Library/Frameworks"
             ],
-            "compilerPath": "/usr/bin/clang",
-            "cStandard": "c11",
+            "compilerPath": "/usr/bin/clang", 
+            "cStandard": "c11",              
             "cppStandard": "c++17",
             "intelliSenseMode": "clang-x64"
         }
